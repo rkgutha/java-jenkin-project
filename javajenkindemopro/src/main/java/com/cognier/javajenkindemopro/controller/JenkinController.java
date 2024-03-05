@@ -23,4 +23,9 @@ public class JenkinController {
         String format = dateFormat.format(date);
         return "Today :: "+format;
     }
+
+    @GetMapping("/infoData")
+    public String getInfoData(){
+        return "Hi this Demo Project for jenkin in AWS Env by Mani";
+    }
 }
